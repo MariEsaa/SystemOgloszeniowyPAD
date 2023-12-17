@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Baner.ico" />
+    <None Remove="Images\Baner.png" />
+    <None Remove="Images\CompanyPictures\TMobile.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\ProfilePictures\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Baner.ico" />
+    <Resource Include="Images\Baner.png" />
+    <Resource Include="Images\CompanyPictures\TMobile.png" />
+  </ItemGroup>
+
+</Project>
