@@ -77,5 +77,18 @@ namespace SystemOgloszeniowyPAD.Views
             string WorkMode = WorkModeCmb.Text;
             OffersControl.ItemsSource = DataBase.SearchOffers(PostionName,Company,Category,Location,PositionLevel,ContractType, Tenure, WorkMode);
         }
+
+        private void CleanBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PostionNameCmb.Text = null;
+            CompanyCmb.Text = null;
+            CategoryCmb.Text = null;
+            LocationCmb.Text = null;
+            PositionLevelCmb.Text = null;
+            ContractTypeCmb.Text = null;
+            TenureCmb.Text = null;
+            WorkModeCmb.Text = null;
+            OffersControl.ItemsSource = DataBase.WriteOffers();
+        }
     }
 }

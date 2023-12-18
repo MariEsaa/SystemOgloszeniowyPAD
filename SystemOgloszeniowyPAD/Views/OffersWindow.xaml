@@ -364,10 +364,26 @@
                     </ComboBox>
                 </StackPanel>
                 <Button
-                    x:Name="SearchBtn"
+                    x:Name="CleanBtn"
                     Grid.Row="5"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
+                    Width="200"
+                    Height="60"
+                    Margin="5"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Background="WhiteSmoke"
+                    BorderBrush="#7776BC"
+                    BorderThickness="4"
+                    Click="CleanBtn_Click"
+                    Content="Wyczyść Filtry"
+                    FontSize="25"
+                    FontWeight="UltraBold"
+                    Foreground="#7776BC" />
+                <Button
+                    x:Name="SearchBtn"
+                    Grid.Row="5"
+                    Grid.Column="1"
                     Width="200"
                     Height="60"
                     Margin="5"

@@ -47,7 +47,7 @@
                     Margin="100,0,0,0"
                     HorizontalAlignment="Right"
                     Orientation="Horizontal">
-                    <StackPanel Width="500">
+                    <StackPanel Width="550">
                         <Label
                             x:Name="WelcomeLbl"
                             HorizontalAlignment="Center"

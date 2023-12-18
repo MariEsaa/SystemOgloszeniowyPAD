@@ -10,11 +10,16 @@
   <ItemGroup>
     <None Remove="Images\Baner.ico" />
     <None Remove="Images\Baner.png" />
+    <None Remove="Images\CompanyPictures\Emiter.png" />
+    <None Remove="Images\CompanyPictures\Facebook.png" />
+    <None Remove="Images\CompanyPictures\Microsoft.png" />
     <None Remove="Images\CompanyPictures\TMobile.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Images\ProfilePictures\" />
+    <None Remove="Images\CompanyPictures\ZSTIO.png" />
+    <None Remove="Images\ProfilePictures\UserLogo.jpg" />
+    <None Remove="Images\ProfilePictures\UserLogo2.png" />
+    <None Remove="Images\ProfilePictures\UserLogo3.png" />
+    <None Remove="Images\ProfilePictures\UserLogo4.png" />
+    <None Remove="Images\ProfilePictures\UserLogo5.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +29,16 @@
   <ItemGroup>
     <Resource Include="Images\Baner.ico" />
     <Resource Include="Images\Baner.png" />
+    <Resource Include="Images\CompanyPictures\Emiter.png" />
+    <Resource Include="Images\CompanyPictures\Facebook.png" />
+    <Resource Include="Images\CompanyPictures\Microsoft.png" />
     <Resource Include="Images\CompanyPictures\TMobile.png" />
+    <Resource Include="Images\CompanyPictures\ZSTIO.png" />
+    <Resource Include="Images\ProfilePictures\UserLogo.jpg" />
+    <Resource Include="Images\ProfilePictures\UserLogo2.png" />
+    <Resource Include="Images\ProfilePictures\UserLogo3.png" />
+    <Resource Include="Images\ProfilePictures\UserLogo4.png" />
+    <Resource Include="Images\ProfilePictures\UserLogo5.png" />
   </ItemGroup>
 
 </Project>

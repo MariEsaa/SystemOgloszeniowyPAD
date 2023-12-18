@@ -108,13 +108,14 @@ namespace SystemOgloszeniowyPAD.Views
                     ProfilePicture.Source = new BitmapImage(new Uri(userBasicInfo.ProfilePicture, UriKind.RelativeOrAbsolute));
                     ResidenceTxt.Text = userBasicInfo.Residence;
                 });
+                UserPhoto.Source = ProfilePicture.Source = new BitmapImage(new Uri(userBasicInfo.ProfilePicture, UriKind.RelativeOrAbsolute));
 
             }
             basicInformations = DataBase.WriteBasicInformations(ID);
             if (!string.IsNullOrWhiteSpace(NameTxt.Text))
             {
                 AddBasicInformationBtn.Visibility = Visibility.Collapsed;
-                UpdateBasicInformationBtn.Margin = new Thickness(205, 5, 5, 5);
+                UpdateBasicInformationBtn.Margin = new Thickness(185, 5, 5, 5);
             }
         }
         private void BackToMainPageBtn_Click(object sender, RoutedEventArgs e)
@@ -320,8 +321,14 @@ namespace SystemOgloszeniowyPAD.Views
         private void StopCandidate_Click(object sender, RoutedEventArgs e)
         {
             var id = (((Button)sender).CommandParameter as UserOffers).ID;
-            DataBase.DeleteUserOffers(id);
-            refreshUserOffers();
+            var PostionName = (((Button)sender).CommandParameter as UserOffers).PositionName;
+            var rezultat = MessageBox.Show("Czy chcesz przestać kandydować " + PostionName + "?", "Przestań kandydować", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (rezultat == MessageBoxResult.Yes)
+            {
+                DataBase.DeleteUserOffers(id);
+                refreshUserOffers();
+            }
+           
         }
     }
 }

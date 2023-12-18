@@ -42,7 +42,10 @@
             </Border.Effect>
             <StackPanel Orientation="Horizontal">
                 <StackPanel Orientation="Horizontal">
-                    <Image Margin="50,10,0,0" Source="/Images/Baner.png" />
+                    <Image
+                        x:Name="UserPhoto"
+                        Margin="50,10,0,10"
+                        Source="/Images/Baner.png" />
                 </StackPanel>
                 <StackPanel
                     Margin="100,0,0,0"
@@ -112,7 +115,7 @@
                     FontSize="20"
                     FontWeight="Bold"
                     Foreground="Black" />
-                <StackPanel Height="50" Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
                     <Label
                         Margin="87,0,0,0"
                         HorizontalAlignment="Left"
@@ -213,7 +216,7 @@
                         x:Name="AddBasicInformationBtn"
                         Width="150"
                         Height="35"
-                        Margin="5"
+                        Margin="25,5,5,5"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Background="WhiteSmoke"
