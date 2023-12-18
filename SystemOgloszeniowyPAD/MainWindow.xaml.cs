@@ -76,11 +76,11 @@ namespace SystemOgloszeniowyPAD
             int numberOfOffers = database.GetNumberOfOffers();
             if (numberOfOffers < 10) 
             {
-                esa.Content = $"Przygotowaliśmy dla ciebie {numberOfOffers} atrakcyjne oferty pracy!!!";
+                OffersCount.Content = $"Przygotowaliśmy dla ciebie {numberOfOffers} atrakcyjne oferty pracy!!!";
             }
             else
             {
-                esa.Content = $"Przygotowaliśmy dla ciebie {numberOfOffers} atrakcyjnych ofert pracy!!!";
+                OffersCount.Content = $"Przygotowaliśmy dla ciebie {numberOfOffers} atrakcyjnych ofert pracy!!!";
             }
             
         }
