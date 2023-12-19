@@ -33,6 +33,7 @@ namespace SystemOgloszeniowyPAD.Views
             TenureCmb.SelectedIndex = 0;
             WorkModeCmb.SelectedIndex = 0;
             CategoryCmb.SelectedIndex = 0;
+            TitleTxt.Content = "Dodaj Ofertę";
             AddEditBtn.Content = "Dodaj Ofertę";
             AddEditBtn.Click += AddOffer_Click;
         }
@@ -59,6 +60,7 @@ namespace SystemOgloszeniowyPAD.Views
             TenureCmb.Text = offers.Tenure;
             WorkModeCmb.Text = offers.WorkMode;
             SalaryTxt.Text = offers.Salary;
+            TitleTxt.Content = "Edytuj Ofertę";
             AddEditBtn.Content = "Edytuj Ofertę";
             AddEditBtn.Click += EditOffer_Click;
         }

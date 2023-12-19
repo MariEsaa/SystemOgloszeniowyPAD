@@ -40,7 +40,6 @@
                 Grid.ColumnSpan="4"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Content="Dodaj Oferte"
                 FontSize="20"
                 FontWeight="Bold"
                 Foreground="Black" />
